@@ -1,278 +1,270 @@
+*scene_list
+  wakeup
+  room
+  knock
+  escape
+  interrogation
+  
+
+*create guilt 50
+*create reputation 50
+
+*label Start
 
 You wake up to find yourself covered in a warm, crimson liquid. You look at your hands and don't realize 
 it's blood until your eyes venture to the other side of your bed, and you see your Best friend. But, when 
 you attempt to wake him up, he doesn't stir. "JONAS!" you cry. "JONAS, wake up!" now, you have 
 regret. You feel a weight on your shoulders from the troubled past JONAS has left you with. You begin to 
 panic when you hear a knock at your bedroom door. Do you... 
+*choice
+  #Hide in closet 
+      You see ominous shadow feet under the closet door and they slow walk towards you begins to interrogate you. 
+      *set guilt +10
+      *set reputation %-10
+      *goto HIDE
 
-You have 3 choices:
+  #Flee the scene
+      The only way to escape the room, other than the door, is to launch yourself out the window. You 
+      contemplate your choices as you hear the knocks getting more and more aggressive and you begin 
+      to panic. You decide you have no time, and launch yourself out of the window just as a man breaks 
+      your door down.  
+      "No!" you cry, as you have just fallen. The man rushes to the window and you recognize him as one 
+      of your best friend colleagues from the police station. He tries to call down to you, but it's too late. 
+      You begin what seems like an eternity of your descent to hell and, slowly, you feel the life leave your 
+      body. You die. 
+      *finish
 
-First:Hide in closet 
-
-SECOND:Flee the scene
-
-Third:Open the door
-
-*Go back*
-
-If you choose :Hide in closet 
-
-You see ominous shadow feet under the closet door and they slow walk towards you begins to 
-interrogate you. 
-
-   How do you respond? 
-
-You have 2 choices only:
-
-First:Lie and say you don't know him. 
-
-Second:Tell the truth and confess that you know him.
-
-*Go Back*
-
-*If you choose Lie and say you don't know him. *
-
-The officer has to take you into questioning, but ask the chief to question you because he couldn't break 
-you. The Chief believes nothing you say and arrests you immediately. You are in jail, but you notice 
-one of the guards taking notice in you. Suddenly, you realize the guard is the same police officer that 
-initially arrested you! One day, he comes to you and introduces himself as Rico. He says he has a 
-proposition to free you if you comply with some of his rules. You learn that if you were to begin a 
-relationship with him, he could try to get you out of that horrid prison. What do you do?
-
-You have 3 choices
-
-First:Accept his position
-
-Second:You tell the police about Rico to take advantage of you.
-
-Third:Dismiss his intentions and return to normal jail life.
-
-*Go back*
-
-* If  you choose Accept his position*
-
-You and Rico attempt to escape the prison, but the Chief catches you fleeing in the courtyard. He 
-raises his gun and points it at you. You brace yourself for the bullet's impact, but when it doesn't 
-come, you look at the Chief. He slowly adjusts his aim to Rico and shoots him through the heart. You 
-cry: 
-"No!" but it's too late. The Chief fires the gun at you immediately after, and you feel the life leaving 
-your wounded body. You and Rico die together.  End Game
-
-*If you choose You tell the police about Rico to take advantage of you.*
-
-Although you told the Chief you're innocent, he doesn't believe you. He said that if you were truly 
-innocent, you wouldn't have hid in the closet when you heard a knock at your bedroom door. You try 
-to correct him: 
-"But--" you start. Suddenly, the memories come crashing over you like a wave. You remember every 
-graphic detail: grabbing the knife you always kept hidden in the kitchen, hugging your 'beloved' best 
-friend, and then stabbing him repeatedly in the back. You don't think as you say: 
-"Oh, my god I did kill him!" and the Chief knows for sure this is your confession. You're immediately 
-hanged for murder of the first degree. End Game
-
-*If you choose Dismiss his intentions and return to normal jail life.*
-
-You return to what you now know as normalcy, but get into a brawl a few years later with the prison's 
-most dangerous, blood-hungry gang: the Jailbirds. You are slaughtered by the leader of the gang 
-when she pulls out a knife that she smuggled in. You die of blood loss.End Game
-
-*Go Back*
-
-Second:Tell the truth and confess that you know him.    
-
-
-The officer doesn't observe any other possible suspects and takes you into the police station for 
-questioning. The two of you enter an grim, gloomily-lighted room. He points to a chair, and you 
-slowly walk over and sit down, in anticipation for your inevitable doom. The officer introduces himself 
-as Rico, and tells you that he and your Best Friend collaborated at the station many times. 
-"Ms, I'm very sorry for your loss," the officer remarked. 
-"Thank you, today feels so surreal," you reply, staring into space. 
-"Do you know how your Best friend died?" he asked. 
-"I'm sorry, I have no recollection of last night," you confess. He glances towards a mirror behind you, 
-but his eyes dart quickly back to you. 
-“What was your relationship stable with your Best friend? Was there any reason to believe you 
-could've committed this crime?” he asks. How do you respond? 
-
-*
-You have 3 choices*
-First:Lie
-
-Second:Flirt with him
-
-Third:Tell the truth
-
-* If you choose Lie*
-
-The officer knows you're lying and immediately arrests you. You're taken to a women's penitentiary, 
-where you serve a life sentence under extremely intense supervision. The prison's most notorious 
-gang, the Jailbirds, invites you to join. Do you...
-
-*You have 2 choices:*
-First:Join
-
-Second:Don't Join.You don't need drama
-
-*If you choose Join
-
-You slowly work your way to being the leader of the gang. However, two years after you become the 
-leader, you're killed in a brawl with your rival gang, the Prison Posse, when the guards saw a fight 
-starting to brew they shot you down in the courtyard. You die. End Game
-
-*if you choose Don't Join.You don't need drama*
-
-The gang kills you immediately after you decline their invitation. You've now doubled their sentences 
-to 1 life sentence each. They kill themselves as well, to avoid the inescapable result of rotting in 
-jail.End Game
-
-*Go Back*
-
-Second:Flirt with him 
  
-*if you choose flirt with him*
+  #Open the door
+      You find a tall, handsome police officer standing at the door. You recognize him from your best 
+      friend precinct. You remember his name to be Rico. He immediately sees the blood on your hands 
+      and holds a gun at you. However, upon further examination, he recognizes you and retreats. He's 
+      still holding his handgun, and you're not sure if you can trust Rico. 
+      *set reputation %+10
+      *goto OPEN
 
-He's flattered and lets you go. However, a year later, when your case is reopened, there's a lot of 
-evidence stacked against you and you’re immediately hunted down and hanged for murder of the 
-third degree.End Game
+*label HIDE
 
-Third:Tell the truth
+How do you respond? 
+*choice
+    #Lie and say you don't know him. 
+        The officer has to take you into questioning, but ask the chief to question you because he couldn't break 
+        you. The Chief believes nothing you say and arrests you immediately. You are in jail, but you notice 
+        one of the guards taking notice in you. Suddenly, you realize the guard is the same police officer that 
+        initially arrested you! One day, he comes to you and introduces himself as Rico. He says he has a 
+        proposition to free you if you comply with some of his rules.    
+        *set reputation %-10
+        *goto INTERROGATION
 
-*If you choose Tell the truth*
-You tell the truth and say he was your Best friend before he died. Since you're the only possible 
-suspect, you're put in prison. You remain there until you’re taken in by one of the prison’s most 
-notorious gangs, the Prison Possy. You learn the ways of prison gangs with them, and climb the 
-latter until you become their leader two years later. However, only six months after that, you’re killed 
-by your rival gang, the Jailbirds.  End Game
+    #Tell the truth and confess that you know him.
+        The officer doesn't observe any other possible suspects  and takes you into the police station for 
+        questioning. The two of you enter an grim, gloomily-lighted room. He points to a chair, and you 
+        slowly walk over and sit down, in anticipation for your inevitable doom. The officer introduces himself 
+        as Rico, and tells you that he and your Best Friend collaborated at the station many times. 
+        "Ms, I'm very sorry for your loss," the officer remarked. 
+        "Thank you, today feels so surreal," you reply, staring into space. 
+        "Do you know how your Best friend died?" he asked. 
+        "I'm sorry, I have no recollection of last night," you confess. He glances towards a mirror behind you, 
+        but his eyes dart quickly back to you. 
+        *set reputation %+10
+        *goto INTERROGATION
 
-*GO BACK*
 
-Second: Flee Scene
-The only way to escape the room, other than the door, is to launch yourself out the window. You 
-contemplate your choices as you hear the knocks getting more and more aggressive and you begin 
-to panic. You decide you have no time, and launch yourself out of the window just as a man breaks 
-your door down.  
-"No!" you cry, as you have just fallen. The man rushes to the window and you recognize him as one 
-of your best friend colleagues from the police station. He tries to call down to you, but it's too late. 
-You begin what seems like an eternity of your descent to hell and, slowly, you feel the life leave your 
-body. You die. End 
-GAME 
-*GO BACK*  
+*label OPEN
 
-Third:Open the door
+However, upon further examination, he recognizes you and retreats. He's still holding his handgun, and you're not sure if you can trust Rico. How do react?  
+*choice
+    #Ask officer for help
+        He believes you, and knew your Best friend to be a noble officer, but because you're the only 
+        bystander, he has to take you to the police station for questioning. Questioning begins and he asks 
+        you if your relationship with your Best friend was stable... 
+        "Do we have any reason to believe you could have harmed Jonas?' he asked sadly. How do you 
+        respond?  
+        *set reputation %+10
+        *goto INTERROGATION
 
-You find a tall, handsome police officer standing at the door. You recognize him from your best 
-friend precinct. You remember his name to be Rico. He immediately sees the blood on your hands 
-and holds a gun at you. However, upon further examination, he recognizes you and retreats. He's 
-still holding his handgun, and you're not sure if you can trust Rico. How do react?  
+    #Tell the truth and confess that you know him.
+        The officer doesn't observe any other possible suspects  and takes you into the police station for 
+        questioning. The two of you enter an grim, gloomily-lighted room. He points to a chair, and you 
+        slowly walk over and sit down, in anticipation for your inevitable doom. The officer introduces himself 
+        as Rico, and tells you that he and your Best Friend collaborated at the station many times. 
+        "Ms, I'm very sorry for your loss," the officer remarked. 
+        "Thank you, today feels so surreal," you reply, staring into space. 
+        "Do you know how your Best friend died?" he asked. 
+        "I'm sorry, I have no recollection of last night," you confess. He glances towards a mirror behind you, 
+        but his eyes dart quickly back to you. 
+        *set reputation %+10
+        *goto INTERROGATION
 
-You have 3 choices:
-FIRST:Ask officer for help
-
-SECOND:Tell him truth
-
-THIRD:Attempt to disarm
-
-*If you choose Ask officer for help*
-
-He believes you, and knew your Best friend to be a noble officer, but because you're the only 
-bystander, he has to take you to the police station for questioning. Questioning begins and he asks 
-you if your relationship with your Best friend was stable... 
-"Do we have any reason to believe you could have harmed Jonas?' he asked sadly. How do you 
-respond?  
-
-You have 3 choices:
-FIRST:Lie
-
-SECOND:Flirt with him
-
-THIRD:Tell the truth
-
-*If you choose Lie* 
- 
-Rico realizes you're lying, feels betrayed, and yells, 
-"Jonas was a good man. How could you do that to him?" You regret your lie instantly, but it's already 
-too late, and by the time you try and explain yourself, you're handcuffed by Rico, who has tears in 
-his eyes. 
-"Rico-" you start. But he cuts you off and reads you your rights. You can feel his hatred for you and 
-you're silent from then on. You go to prison and serve a life sentence. There, you die of old age 
-many years later.End Game
-
-*If you choose Flirt with him*
-
-He's flattered and he introduces himself as Rico. Soon after, he comes to you with a proposition: a 
-forbidden relationship that could get you killed! But, if you don't agree, Rico will always have the 
-information he needs to ruin your life. You decide to agree, and the investigation continues. In the 
-meantime, Rico lets you escape from jail, and you enjoy your time together. A couple months later, 
-just when you think you've cleared your name, you get a dream about the night your Best friend was 
-murdered. You remember you and him fighting. You remember grabbing the knife you kept hidden in 
-the kitchen. He wanted to make up, and you didn't. He hugged you and impaled himself on the knife 
-in your hands.  
-"No!" you scream, but it's too late. The dream was so vivid it couldn't possibly be fake! you accept 
-the fact that you did it and confess due to the newly surfaced grief you feel for your late Best friend. 
-Finally, you confess that you feel you're not safe, and you should not be together any longer. You're 
-put on trial, but make no effort to defend yourself. You are executed three weeks later for the murder 
-of your Best friend.End Game
-
-*If you choose Tell the truth*
-
-"I know you don't know what happened," he promised "don't worry, you'll be fine," he reassures you. 
-However, because of the law and evidence stacked against you, he has to arrest you. There are 
-tears in his eyes and he promises you he'll help. before he gently handcuffs you, you swear you see 
-him wink at you, and you know everything will be okay. You arrive at the women's penitentiary and 
-it's clear to see you'll have a hard time making friends. You think "At least I have one friend," as you 
-look at the police officer. You find out he'll be working as a guard at the penitentiary. A budding (and 
-forbidden) relationship starts to flourish. 
-One night, Rico tells you how to escape following certain rules
-You have 3 choices:
-
-  FIRST:You Agree
-
-SECOND:You tell the chief police about Rico trying to take advantage of you
-
-THIRD:Dismiss his intention and return to normal jail life
-
-*If you choose  You Agree*  
-
-The chief finds out about your secret with Rico. You try to reason with him, but it doesn't work. He 
-immediately shoots you and Rico. You die.  End Game
-
-*If you choose You tell the chief police about Rico trying to take advantage of you*    
-
-Good choice! While investigating the scene of the crime, the Chief found there was another 
-individual at the house. It was Enrique, your neighbor! A couple months later in court, Enrique is 
-found guilty of all charges, including pinning it on you, and your are finally free! Congratulations! End 
-Game
-
-*If you choose Dismiss his intention and return to normal jail life  *
-
-You appreciate Rico gesture, but you think you'd both be safer if you were to return to a normal jail 
-life. But, since you said no to his proposition, your investigation is never opened again by the police. 
-You're killed a few years later by a gang of your angry cellmates called the Jailbirds.End Game
-
-*GO BACK*
-
-The Interrogation
-
+*label INTERROGATION
 You are arrested and the officer takes you to the police station for questioning. Upon arrival you are placed in a small soundproof room with only two chairs and a desk,
 with one-way mirror on the walls. This creates a sense isolation that increases your anxiety. After reviewing the suspect’s profile the officer enters the interrogation
 room. Before starting with the interrogation the officer informs you of your miranda rights and gives you the opportunity to exercise those rights.
+*choice
+    #continue
+        The officer starts questioning and presents the facts of the case and informs about the evidence against you. Determining what evidence was located and 
+        considered in forming reasonable grounds to arrest you.
 
-choices: continue or wait for your lawyer(you are released on bail and return for the trial)
+            #Tell the truth
+                *if guilt low
+                    Wishing to exonerate yourself, you answer the questions truthfully and with the lack of substantial evidence the officer ends the interrogation and you are free to go.
+                    *finish
 
-The officer starts questioning and presents the facts of the case and informs about the evidence against you. Determining what evidence was located and 
-considered in forming reasonable grounds to arrest you.
+                *elseif guilt med
+                    The substantial amount of evidence pointing at your involvement in the crime places you as the primary suspect and will go on trial.
+                    *finish
 
-choices: Tell the truth or Try to deceive(adds evidence againts you)
+                *else
+                    You surrender in the face of overwhelming evidence even though you have no recollection of what happened, the officer successfully coerced
+                    you to a false Confession and immediately put in jail.
+                    *goto STATION
 
- low evidence - Wishing to exonerate yourself, you answer the questions truthfully and with the lack of substantial evidence the officer ends the interrogation
-and you are free to go.
-              - Despite getting caught lying, the officer has no choice but to end the interrogation and let you go, becasue of the lack of evidence againts you.
+            #Try to deceive
+                *set guilt +10
+                *if guilt low
+                    the officer has no choice but to end the interrogation and let you go, because of the lack of evidence against you.
+                    *finish
 
- med evidence - Trying to outsmart the system, you try to deceive and fabricate an alibi,the officer realizes you are lying unfortunately the officer caught some 
-inconsistency from your statement and the evidence pointing at your involvement with the crime places you as the primary suspect and will go on trial.
-              - Despite being honest, substantial amount of evidence pointing at your involvement in the crime places you as the primary suspect and will go on trial.
+                *elseif guilt med
+                    Trying to outsmart the system, you try to deceive and fabricate an alibi,the officer realizes you are lying unfortunately the officer caught some 
+                    inconsistency from your statement and the evidence pointing at your involvement with the crime places you as the primary suspect and will go on trial.
 
-high evidence - You surrender in the face of overwhelming evidence even though you have no recollection of what happened, the officer successfully coerced
-you to a false Confession and immediately put in jail.
+                *else
+                    You surrender in the face of overwhelming evidence even though you have no recollection of what happened, the officer successfully coerced
+                    you to a false Confession and immediately put in jail.
+                    *goto STATION
+        
+    #wait for your lawyer
+        you are released on bail and return for the trial
+        *if guilt low
+            *finish
+        *else
+            *goto STATION
+            
 
-outcomes(evidence based): low evidence - you are released
-                          med evidence - you are scheduled for trial
-                         high evidence - you are imprisoned
+
+*label STATION
+
+“What was your relationship stable with your Best friend? Was there any reason to believe you could've committed this crime?” he asks. How do you respond? 
+*choice
+    if reputation good
+      #Lie
+          Rico realizes you're lying, feels betrayed, and yells, 
+          "Jonas was a good man. How could you do that to him?" You regret your lie instantly, but it's already 
+          too late, and by the time you try and explain yourself, you're handcuffed by Rico, who has tears in his eyes. 
+          "Rico-" you start. But he cuts you off and reads you your rights. You can feel his hatred for you and 
+          you're silent from then on. You go to prison and serve a life sentence. There, you die of old age many years later.
+          *finish
+              
+      #Flirt
+          He's flattered and he introduces himself as Rico. Soon after, he comes to you with a proposition: a 
+          forbidden relationship that could get you killed! But, if you don't agree, Rico will always have the 
+          information he needs to ruin your life. You decide to agree, and the investigation continues. In the 
+          meantime, Rico lets you escape from jail, and you enjoy your time together. A couple months later, 
+          just when you think you've cleared your name, you get a dream about the night your Best friend was 
+          murdered. You remember you and him fighting. You remember grabbing the knife you kept hidden in 
+          the kitchen. He wanted to make up, and you didn't. He hugged you and impaled himself on the knife 
+          in your hands. "No!" you scream, but it's too late. The dream was so vivid it couldn't possibly be fake! you accept 
+          the fact that you did it and confess due to the newly surfaced grief you feel for your late Best friend. 
+          Finally, you confess that you feel you're not safe, and you should not be together any longer. You're 
+          put on trial, but make no effort to defend yourself. You are executed three weeks later for the murder 
+          of your Best friend.
+          *finish
+       #truth
+           "I know you don't know what happened," he promised "don't worry, you'll be fine," he reassures you. 
+           However, because of the law and evidence stacked against you, he has to arrest you. There are 
+           tears in his eyes and he promises you he'll help. before he gently handcuffs you, you swear you see 
+           him wink at you, and you know everything will be okay. You arrive at the women's penitentiary and 
+           it's clear to see you'll have a hard time making friends. You think "At least I have one friend," as you 
+           look at the police officer. You find out he'll be working as a guard at the penitentiary. A budding (and 
+           forbidden) relationship starts to flourish.
+           One night, Rico tells you how to escape following certain rules
+           *goto JAIL
+
+
+              
+      if reputation bad
+      #Lie
+          The officer knows you're lying and immediately arrests you. You're taken to a women's penitentiary, 
+          where you serve a life sentence under extremely intense supervision. The prison's most notorious 
+          gang, the Jailbirds, invites you to join. Do you...
+          
+          *label JAILBIRDS
+          *choice
+              #Join
+                  You slowly work your way to being the leader of the gang. However, two years after you become the 
+                  leader, you're killed in a brawl with your rival gang, the Prison Posse, when the guards saw a fight 
+                  starting to brew they shot you down in the courtyard. You die. 
+                  *finish
+                  
+              #Don't Join.You don't need drama
+                  The gang kills you immediately after you decline their invitation. You've now doubled their sentences 
+                  to 1 life sentence each. They kill themselves as well, to avoid the inescapable result of rotting in jail.
+                  *finish
+
+              
+      #Flirt with him
+          He's flattered and lets you go. However, a year later, when your case is reopened, there's a lot of 
+          evidence stacked against you and you’re immediately hunted down and hanged for murder of the 
+          third degree.
+          *finish
+              
+      #Tell the truth
+          You tell the truth and say he was your Best friend before he died. Since you're the only possible  
+          suspect, you're put in prison. You remain there until you’re taken in by one of the prison’s most 
+          notorious gangs, the Prison Possy. You learn the ways of prison gangs with them, and climb the 
+          latter until you become their leader two years later. However, only six months after that, you’re killed 
+          by your rival gang, the Jailbirds.  
+          *finish
+      
+    
+          
+          
+    
+*label JAIL
+
+ You learn that if you were to begin a relationship with him, he could try to get you out of that horrid prison. What do you do? 
+*choice
+        #Accept his position
+            You and Rico attempt to escape the prison, but the Chief catches you fleeing in the courtyard. He 
+            raises his gun and points it at you. You brace yourself for the bullet's impact, but when it doesn't 
+            come, you look at the Chief. He slowly adjusts his aim to Rico and shoots him through the heart. You 
+            cry: 
+            "No!" but it's too late. The Chief fires the gun at you immediately after, and you feel the life leaving 
+            your wounded body. You and Rico die together
+            *finish
+            
+        #You tell the police about Rico to take advantage of you.
+            Although you told the Chief you're innocent, he doesn't believe you. He said that if you were truly 
+            innocent, you wouldn't have hid in the closet when you heard a knock at your bedroom door. You try 
+            to correct him: 
+            "But--" you start. Suddenly, the memories come crashing over you like a wave. You remember every 
+            graphic detail: grabbing the knife you always kept hidden in the kitchen, hugging your 'beloved' best 
+            friend, and then stabbing him repeatedly in the back. You don't think as you say: 
+            "Oh, my god I did kill him!" and the Chief knows for sure this is your confession. You're immediately 
+            hanged for murder of the first degree.
+            *finish
+            
+        #Dismiss his intentions and return to normal jail life.
+            You return to what you now know as normalcy, but get into a brawl a few years later with the prison's 
+            most dangerous, blood-hungry gang: the Jailbirds. You are slaughtered by the leader of the gang 
+            when she pulls out a knife that she smuggled in. You die of blood loss.
+            *finish
+                
+        if reputation good
+        #You Agree
+            The chief finds out about your secret with Rico. You try to reason with him, but it doesn't work. 
+            He immediately shoots you and Rico. You die. 
+            *finish
+
+        #You tell the chief police about Rico trying to take advantage of you
+            Good choice! While investigating the scene of the crime, the Chief found there was another 
+            individual at the house. It was Enrique, your neighbor! A couple months later in court, Enrique is 
+            found guilty of all charges, including pinning it on you, and your are finally free! Congratulations! 
+            *finish
+
+        #Dismiss his intention and return to normal jail life
+            You appreciate Rico gesture, but you think you'd both be safer if you were to return to a normal jail 
+            life. But, since you said no to his proposition, your investigation is never opened again by the police. 
+            You're killed a few years later by a gang of your angry cellmates called the Jailbirds.
+            *finish
