@@ -1,7 +1,3 @@
-From:	mycah cabual <mcabual059@gmail.com>
-Sent:	18 August 2019 17:21
-To:	edzvenlariza@gmail.com
-Subject:	Cs202
 
 You wake up to find yourself covered in a warm, crimson liquid. You look at your hands and don't realize 
 it's blood until your eyes venture to the other side of your bed, and you see your Best friend. But, when 
@@ -252,3 +248,31 @@ life. But, since you said no to his proposition, your investigation is never ope
 You're killed a few years later by a gang of your angry cellmates called the Jailbirds.End Game
 
 *GO BACK*
+
+The Interrogation
+
+You are arrested and the officer takes you to the police station for questioning. Upon arrival you are placed in a small soundproof room with only two chairs and a desk,
+with one-way mirror on the walls. This creates a sense isolation that increases your anxiety. After reviewing the suspect’s profile the officer enters the interrogation
+room. Before starting with the interrogation the officer informs you of your miranda rights and gives you the opportunity to exercise those rights.
+
+choices: continue or wait for your lawyer(you are released on bail and return for the trial)
+
+The officer starts questioning and presents the facts of the case and informs about the evidence against you. Determining what evidence was located and 
+considered in forming reasonable grounds to arrest you.
+
+choices: Tell the truth or Try to deceive(adds evidence againts you)
+
+ low evidence - Wishing to exonerate yourself, you answer the questions truthfully and with the lack of substantial evidence the officer ends the interrogation
+and you are free to go.
+              - Despite getting caught lying, the officer has no choice but to end the interrogation and let you go, becasue of the lack of evidence againts you.
+
+ med evidence - Trying to outsmart the system, you try to deceive and fabricate an alibi,the officer realizes you are lying unfortunately the officer caught some 
+inconsistency from your statement and the evidence pointing at your involvement with the crime places you as the primary suspect and will go on trial.
+              - Despite being honest, substantial amount of evidence pointing at your involvement in the crime places you as the primary suspect and will go on trial.
+
+high evidence - You surrender in the face of overwhelming evidence even though you have no recollection of what happened, the officer successfully coerced
+you to a false Confession and immediately put in jail.
+
+outcomes(evidence based): low evidence - you are released
+                          med evidence - you are scheduled for trial
+                         high evidence - you are imprisoned
