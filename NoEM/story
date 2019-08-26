@@ -9,25 +9,32 @@
 *create guilt 50
 *create reputation 50
 
+
+
 *label WAKEUP
 
 You wake up to find yourself covered in a warm, crimson liquid. You look at your hands and don't realize 
 it's blood until your eyes venture to the other side of your bed, and you see your Best friend. 
 *choice
-    #inspect Jonas
-        You got to Jonas.
-        *goto JONAS
+    #look around
+        *goto ROOM
 
-*label JONAS
+*label ROOM
+
+ou look around the *room* you're in. It look's like a small apartment.
+                            "You see a *closet* next to the *bed*. Across the room, you see a *bathroom*.
+                            "Sunlight filters in through a nearby *window*. Opposite that, 
+                            "you see what seems to be the front *door*. 
+
+
 
 But, when you attempt to wake him up, he doesn't stir. "JONAS!" you cry. "JONAS, wake up!" now, you have 
 regret. You feel a weight on your shoulders from the troubled past JONAS has left you with.
 *choice
 
-*label ROOM
+*label KNOCK
 
-You begin to 
-panic when you hear a knock at your bedroom door. Do you... 
+You begin to panic when you hear a knock at your bedroom door. Do you... 
 *choice
   #Hide in closet 
       You see ominous shadow feet under the closet door and they slow walk towards you begins to interrogate you. 
