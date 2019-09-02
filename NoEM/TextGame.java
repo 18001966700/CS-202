@@ -3,13 +3,16 @@ import java.util.*;
 public class TextGame{
     private static Scanner in = new Scanner(System.in);
     private static int scene=0;
-    private static String command;
     private static String[][] commands={
         {"?","help"},
-{"quit", "exit"},
-{}
-
-    };
+		{"quit", "exit"},
+    }
+	
+	private static String[][] objects={
+		{"me"},
+		{"2"}
+		
+		};
 
     private static int woke=0;
 
@@ -31,6 +34,7 @@ public class TextGame{
 
     static void getInput(){
         System.out.print("\n>");//Prefix for player input
+		String action;
         String input = " "+in.nextLine().toLowerCase()+" ";//With spaces to avoid cases where command word is inside input 
                                                            //e.g. "remove" is recognised as "move".
         System.out.println();
@@ -38,7 +42,15 @@ public class TextGame{
         for (int i = 0; i < commands.length; i++) { //Loops through each row
             for (int x = 0; x < commands[i].length; x++) { //Loops through each variable in the selected row
                 if (input.contains(" "+commands[i][x]+" ")) { //Checks if player input contains variable
-                    command = commands[i][0]; //Sets which row contains the player input
+                    action = commands[i][0]; //Sets which row contains the player input
+                }
+            }
+        }
+		
+		for (int i = 0; i < objects.length; i++) { //Loops through each row
+            for (int x = 0; x < objects[i].length; x++) { //Loops through each variable in the selected row
+                if (input.contains(" "+objects[i][x]+" ")) { //Checks if player input contains variable
+                    action = action + objects[i][0]; //Sets which row contains the player input
                 }
             }
         }
@@ -61,7 +73,7 @@ public class TextGame{
             case "wake":
                 display("You're already awake.");
                 woke++;
-                if(woke = 10){
+                if(woke == 10){
                     playEnding(-1);
                 }
             default:
@@ -71,7 +83,7 @@ public class TextGame{
     }
 
     static void playPrologue() {
-        d
+        
         
 
     }
