@@ -1,1 +1,62 @@
+Text-based RPG combat system
+
+A CS202 Project proposed to Mr. Joemarie Segura, AMACC Bacolod
+
+Submitted by:
+ Edzil Ven Lariza
+September 2019
+
+Objective:
+
+    The objective of this project is to apply the concepts and lessons
+discussed in the CS202 class to create a playable Text-based RPG combat system in the Java Programming Language.
+Project Description:
+
+    The proposed combat system will be mainly based on the mechanics of the fantasy tabletop role-playing game Dungeons & Dragons (D&D), specifically the ruleset of the current version: the 5th Edition (D&D 5E). The system aims to emulate the experience of a simple D&D session, specifically in the combat, in a text-based adventure environment.
+
+    The program will act as the Dungeon Master (DM) with the role of the game master or referee and describes for other players what they perceive in this imaginary world, and what effects their actions have. The user will act as the player character (PC) and will be given the chance to set their characters attributes. The core mechanic is the twenty-sided die, or d20 as it is known in the game. The program will ask the player to input an action and then respond with the predetermined DM text for that output.
+
+    For each action taken, the PC rolls a d20; The results of which will be modified by a number based on the character's skill at that task. The DM compares that value to a set number that he or she determined as the difficulty for the task. If the value meets or exceeds the number, the PC will succeed in the action. If it’s below the number, the PC will fail in the action. Generally, rolling a 20 is considered an automatic success as it's the highest number on the die (in some cases a DM may decide it's a success even if the total value doesn't meet the difficulty value), while rolling a 1 is an automatic failure.
+
+
+    In the first part of the program, the user will be presented with a series of questions to create their character. The created PC will then enter a scenario which will eventually lead them into combat. Combat is ended when either the enemy or PC has their health stat depleted or if the PC successfully manages to flee. The game ends when the PC finishes all the combat encounters or is defeated in combat.The flow for the combat is outline in the image attached at the end of the document.
+
+
+Project Plan
+
+    The planning stage of the project will be completed by the 12th of September 2019. In this stage, the setting and flow the the system will be designed and finalized.
+
+    The implementation stage will be completed by the 15th of September 2019. In this stage, the core mechanics, Player character sheets and combat flow will be completed.
+
+    The final stage will be completed by the 17th of September 2019. This will consist of the implementation of features and polishing of the system.
+
+
+
+
+
+                           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
