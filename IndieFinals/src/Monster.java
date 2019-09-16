@@ -1,11 +1,11 @@
-import java.awt.Rectangle;
-import java.awt.Point;
-public class Monster {
-    static int size=0;
-    static int location[]={0,0,0};
+import java.awt.*;
 
-    public static boolean canReach(int[] position) {
+public class Monster extends Creature {
+    int size=0;
+
+    public boolean canReach(int[] position) {
         int spaceModifier;
+
         switch(size){
             case 0://Tiny
                 spaceModifier=10;
@@ -26,11 +26,15 @@ public class Monster {
             default:
                 spaceModifier=0;
         }
+
         Rectangle space = new Rectangle(
                 (location[0]-(spaceModifier/2)),
                 (location[1]+(spaceModifier/2)),
                 spaceModifier, spaceModifier);
+
         Point point = new Point(position[0],position[1]);
+
         return space.contains(point);
     }
 }
+
